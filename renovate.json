@@ -18,6 +18,16 @@
       "matchStrings": ["ENV YARN_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "yarn",
       "datasourceTemplate": "npm"
+    },
+    {
+      "fileMatch": [".*y[a]?ml$"],
+      "matchStringsStrategy": "combination",
+      "matchStrings": [
+        "  url: \"?(?<registryUrl>\\S+)\"?\\s*",
+        "      chart: \"?(?<depName>[a-z0-9-]+)\"?\\s*",
+        "      version: \"?(?<currentValue>\\S+)\"?\\s*"
+      ],
+      "datasourceTemplate": "helm"
     }
   ]
 }
