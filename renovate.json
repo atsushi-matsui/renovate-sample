@@ -9,8 +9,18 @@
       "addLabels": ["alpine"]
     },
     {
-      "matchFileNames": ["*/elasticsearch/Dockerfile"],
-      "addLabels": ["elasticsearch"]
+      "matchFileNames": ["*/elasticsearch/stg/Dockerfile"],
+      "addLabels": [
+        "elasticsearch",
+        "stg"
+      ]
+    },
+    {
+      "matchFileNames": ["*/elasticsearch/prd/Dockerfile"],
+      "addLabels": [
+        "elasticsearch",
+        "prd"
+      ]
     }
   ],
   "customManagers": [
