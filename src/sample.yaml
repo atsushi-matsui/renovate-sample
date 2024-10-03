@@ -1,2 +1,2 @@
-# renovate: depName=zammad/zammad registryUrl=https://zammad.github.io/zammad-helm
+# renovate: depName=zammad registryUrl=https://zammad.github.io/zammad-helm
 version: 6.0.0
