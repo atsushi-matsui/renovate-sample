@@ -11,5 +11,15 @@
   "prConcurrentLimit": 0,
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update _VERSION variables in Dockerfiles",
+      "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version=(?<currentValue>.+?)"
+      ]
+    }
+  ]
 }
