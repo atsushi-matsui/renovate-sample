@@ -9,7 +9,6 @@
       "addLabels": ["alpine"]
     },
     {
-      "managers": ["dockerfile"],
       "additionalBranchPrefix": "{{baseDir}}-",
       "packagePatterns": [".*"]
     },
