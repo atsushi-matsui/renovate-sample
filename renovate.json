@@ -5,11 +5,11 @@
   ],
   "packageRules": [
     {
-      "matchFileNames": ["alpine/Dockerfile"],
+      "matchFileNames": ["*/alpine/Dockerfile"],
       "addLabels": ["alpine"]
     },
     {
-      "matchFileNames": ["elasticsearch/Dockerfile"],
+      "matchFileNames": ["*/elasticsearch/Dockerfile"],
       "addLabels": ["elasticsearch"]
     }
   ],
