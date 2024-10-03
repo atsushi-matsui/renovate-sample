@@ -5,8 +5,11 @@
   ],
   "packageRules": [
     {
-      "matchFileNames": ["Dockerfile"],
-      "addLabels": ["test"]
+      "matchDatasources": ["docker"],
+      "addLabels": [
+        "test1",
+        "test2"
+      ]
     }
   ],
   "customManagers": [
