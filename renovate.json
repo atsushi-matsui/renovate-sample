@@ -11,6 +11,17 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version=(?<currentValue>.+?)"
       ]
+    },
+    {
+      "customManagers": [
+        {
+          "customType": "regex",
+          "fileMatch": ["^Dockerfile$"],
+          "matchStrings": ["ENV YARN_VERSION=(?<currentValue>.*?)\\n"],
+          "depNameTemplate": "yarn",
+          "datasourceTemplate": "npm"
+        }
+      ]
     }
   ]
 }
