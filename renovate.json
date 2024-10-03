@@ -8,8 +8,9 @@
       "customType": "regex",
       "description": "update helm",
       "fileMatch": [".*y[a]?ml$"],
+      "datasourceTemplate": "helm",
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)\\s*version: (?<currentValue>.+?)"
+        "# renovate: depName=(?<depName>.+?)\\s*version: (?<currentValue>.+?)"
       ]
     },
     {
@@ -17,7 +18,10 @@
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": ["ENV YARN_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "yarn",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "npm",
+      "addLabels": [
+        "test"
+      ]
     },
     {
       "fileMatch": [".*y[a]?ml$"],
