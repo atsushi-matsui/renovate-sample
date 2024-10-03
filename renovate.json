@@ -16,7 +16,7 @@
       "fileMatch": [".*y[a]?ml$"],
       "datasourceTemplate": "helm",
       "matchStrings": [
-        "# renovate: depName=(?<depName>.+?)\\s*version: (?<currentValue>.+?)"
+        "# renovate: depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version: (?<currentValue>.+?)"
       ]
     },
     {
