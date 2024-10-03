@@ -1,16 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    ":label(renovate)",
-    ":timezone(Asia/Tokyo)"
+    "config:base"
   ],
-  "configMigration": true,
-  "minimumReleaseAge": "7 days",
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
-  "dependencyDashboard": true,
-  "rebaseWhen": "behind-base-branch",
   "customManagers": [
     {
       "customType": "regex",
