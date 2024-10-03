@@ -13,15 +13,11 @@
       ]
     },
     {
-      "customManagers": [
-        {
-          "customType": "regex",
-          "fileMatch": ["^Dockerfile$"],
-          "matchStrings": ["ENV YARN_VERSION=(?<currentValue>.*?)\\n"],
-          "depNameTemplate": "yarn",
-          "datasourceTemplate": "npm"
-        }
-      ]
+      "customType": "regex",
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ENV YARN_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "yarn",
+      "datasourceTemplate": "npm"
     }
   ]
 }
