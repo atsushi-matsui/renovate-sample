@@ -9,8 +9,9 @@
       "description": "update helm",
       "fileMatch": [".*y[a]?ml$"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)\\s*version=(?<currentValue>.+?)"
-      ]
+        "# renovate: depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version=(?<currentValue>.+?)"
+      ],
+      "datasourceTemplate": "helm"
     },
     {
       "customType": "regex",
