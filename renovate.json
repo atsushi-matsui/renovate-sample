@@ -9,6 +9,11 @@
       "addLabels": ["alpine"]
     },
     {
+      "managers": ["dockerfile"],
+      "additionalBranchPrefix": "{{baseDir}}-",
+      "packagePatterns": [".*"]
+    },
+    {
       "matchFileNames": ["*/elasticsearch/stg/Dockerfile"],
       "addLabels": [
         "elasticsearch",
