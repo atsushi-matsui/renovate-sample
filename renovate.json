@@ -7,6 +7,7 @@
     {
       "customType": "regex",
       "description": "update helm",
+      "fileMatch": ["*.yaml"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version=(?<currentValue>.+?)"
       ]
