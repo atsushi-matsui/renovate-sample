@@ -5,11 +5,12 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "addLabels": [
-        "test1",
-        "test2"
-      ]
+      "matchFileNames": ["alpine/Dockerfile"],
+      "addLabels": ["alpine"]
+    },
+    {
+      "matchFileNames": ["elasticsearch/Dockerfile"],
+      "addLabels": ["elasticsearch"]
     }
   ],
   "customManagers": [
