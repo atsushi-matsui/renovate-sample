@@ -9,7 +9,7 @@
       "description": "update helm",
       "fileMatch": [".*y[a]?ml$"],
       "matchStrings": [
-        "# renovate: depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version=(?<currentValue>.+?)"
+        "# renovate: depName=(?<depName>.+?) registryUrl=(?<registryUrl>.+?)\\s*version: (?<currentValue>.+?)"
       ],
       "datasourceTemplate": "helm"
     },
