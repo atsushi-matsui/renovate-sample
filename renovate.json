@@ -6,11 +6,11 @@
   "packageRules": [
     {
       "additionalBranchPrefix": "prd-",
-      "matchFileNames": ["*/prd/*"]
+      "matchFileNames": ["prd/**"]
     },
     {
       "additionalBranchPrefix": "stg-",
-      "matchFileNames": ["*/stg/*"]
+      "matchFileNames": ["stg/**"]
     },
     {
       "matchFileNames": ["*/alpine/Dockerfile"],
