@@ -7,7 +7,7 @@
     {
       "additionalBranchPrefix": "stg-",
       "matchFileNames": ["**/stg/Dockerfile"],
-      "commitMessagePrefix": "stg ",
+      "commitMessagePrefix": "renovate/stg ",
       "addLabels": [
         "stg"
       ]
@@ -15,7 +15,7 @@
     {
       "additionalBranchPrefix": "prd-",
       "matchFileNames": ["**/prd/Dockerfile"],
-      "commitMessagePrefix": "prd ",
+      "commitMessagePrefix": "renovate/prd ",
       "addLabels": [
         "prd"
       ]
