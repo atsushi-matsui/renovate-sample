@@ -5,22 +5,16 @@
   ],
   "packageRules": [
     {
-      "matchFileNames": ["*/alpine/Dockerfile"],
-      "addLabels": ["alpine"]
-    },
-    {
       "additionalBranchPrefix": "stg-",
-      "matchFileNames": ["*/elasticsearch/stg/Dockerfile"],
+      "matchFileNames": ["*/stg/Dockerfile"],
       "addLabels": [
-        "elasticsearch",
         "stg"
       ]
     },
     {
       "additionalBranchPrefix": "prd-",
-      "matchFileNames": ["*/elasticsearch/prd/Dockerfile"],
+      "matchFileNames": ["*/prd/Dockerfile"],
       "addLabels": [
-        "elasticsearch",
         "prd"
       ]
     }
