@@ -6,7 +6,7 @@
   "packageRules": [
     {
       "additionalBranchPrefix": "stg-",
-      "matchFileNames": ["**/stg/Dockerfile"],
+      "matchFileNames": ["docker/(alpine|elasticsearch)/stg/Dockerfile"],
       "commitMessagePrefix": "renovate/stg ",
       "addLabels": [
         "stg"
@@ -14,7 +14,7 @@
     },
     {
       "additionalBranchPrefix": "prd-",
-      "matchFileNames": ["**/prd/Dockerfile"],
+      "matchFileNames": ["docker/(alpine|elasticsearch)/prd/Dockerfile"],
       "commitMessagePrefix": "renovate/prd ",
       "addLabels": [
         "prd"
