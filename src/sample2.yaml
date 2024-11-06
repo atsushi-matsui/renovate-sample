@@ -1,0 +1,26 @@
+---
+# https://github.com/DataDog/helm-charts/tree/master/charts/datadog
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: datadog
+  namespace: monitoring
+spec:
+  chart:
+    spec:
+      chart: datadog
+      sourceRef:
+        name: datadog
+        namespace: flux-system
+        kind: HelmRepository
+      version: 3.32.7
+  interval: 1m0s
+  targetNamespace: monitoring
+  values:
+    # setting datadog-agent
+    agents:
+      # use jmx image
+      image:
+        name: agent
+        # renovate: datasource=docker packageName=datadog/agent versioning=docker
+        tag: 7.45.1-jmx

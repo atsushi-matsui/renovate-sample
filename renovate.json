@@ -26,9 +26,26 @@
       "addLabels": [
         "prd"
       ]
+    },
+    {
+      "groupName": "datadog",
+      "matchPackageNames": [
+        "datadog",
+        "datadog/agent"
+      ]
     }
   ],
   "customManagers": [
+    {
+      "description": "Update tag in yamlfile",
+      "customType": "regex",
+      "fileMatch": [
+        ".+\\.yaml$"
+      ],
+      "matchStrings": [
+        "#\\s*renovate:\\sdatasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>[a-z-]+))?\\s+tag:\\s*(?<currentValue>.+?)"
+      ]
+    },
     {
       "customType": "regex",
       "description": "update helm",
