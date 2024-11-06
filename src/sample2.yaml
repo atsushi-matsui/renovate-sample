@@ -22,5 +22,5 @@ spec:
       # use jmx image
       image:
         name: agent
-        # renovate: datasource=docker depName=datadog/agent versioning=loose
+        # renovate: datasource=docker packageName=datadog/agent versioning=loose
         tag: 7.45.1-jmx
