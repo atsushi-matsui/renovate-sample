@@ -43,7 +43,7 @@
         ".+\\.yaml$"
       ],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>.+?))?\\s+tag:\\s*(?<currentValue>.+?)"
+        "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>\\d+\.\\d+\.\\d+-[a-zA-Z]+))?\\s+tag:\\s*(?<currentValue>.+?)"
       ]
     },
     {
