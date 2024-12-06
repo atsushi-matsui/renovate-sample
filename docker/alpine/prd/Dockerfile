@@ -1,4 +1,4 @@
-FROM alpine:3.19.3
+FROM alpine:3.21.0
 
 # renovate: datasource=github-tags depName=node packageName=nodejs/node versioning=node
 ENV NODE_VERSION=20.10.0
