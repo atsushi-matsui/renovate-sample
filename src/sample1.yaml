@@ -14,7 +14,7 @@ spec:
   chart:
     spec:
       chart: cilium
-      version: 1.12.3
+      version: 1.20.3
   values:
     ipam:
       mode: kubernetes
